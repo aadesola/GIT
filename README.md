@@ -1,23 +1,28 @@
 # GIT
  This reposirtory was created to facilitate hands-on learning of git commands.
  
- ..*Git add . - to stage all existing changes
+ Git add . - to stage all existing changes
  
--Git add (Filename) - To only include changes on Filename
+Git add (Filename) - To only include changes on Filename
 
-git config
+git config - Set up user configuration information across all local repositories. 
+  git config --global user.name "Your Name" sets a name identifier to all your   version history
+  git config --global user.email "your email address" sets an email address associated to your version history.
+  git config --global color.ui auto  set command line coloring for easy reviewing
+git init - initialize a repository
 
-git init
+git clone (URL) create a local copy of a repository
 
-git clone
+git status - shows modified files in your current working directory
 
-git add
+git reset 
 
-git commit
+git commit -m "Commit message" - commit your staged changes
 
-git diff
+git diff - shows the different unstaged changes
+   git diff - shows the different staged changes.
 
-git reset
+git reset - clear all staged commits
 
 git status
 
@@ -29,16 +34,17 @@ git show
 
 git tag
 
-git branch
+git branch - lists out all branches for the working directory and highlights the current branch.
 
-git checkout
+git checkout - switch between branches
+ git checkout -b branchname -creates and switch to a new branch.
 
 git merge
 
-git remote
+git remote add alias url - add a local repository to a remote repository.
 
 git push
 
-git pull
+git pull - fetch and merge 
 
 git stash

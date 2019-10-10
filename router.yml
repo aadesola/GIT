@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: GatewayConnectorToAnalytics
+  name: fraud
   labels:
-    app: hello-node
+    app: fraud-node
 spec:
   selector:
     matchLabels:
-      app: GatewayConnectorToAnalytics
+      app: fraud
   replicas: 3
   template:
     metadata:
       labels:
-        app: GatewayConnectorToAnalytics
+        app: fraud
     spec:
       containers:
       - name: hello

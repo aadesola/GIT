@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hello
-        image: fraudacr.azurecr.io/FraudRouter
+        image: fraudacr.azurecr.io/fraudrouter
         resources:
           requests:
             cpu: 100m

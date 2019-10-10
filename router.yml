@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: GatewayConnectorToAnalytics
   labels:
-    app: GatewayConnectorToAnalytics
+    app: hello-node
 spec:
   selector:
     matchLabels:

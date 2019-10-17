@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: fraudrouter
-  replicas: 1 
+  replicas: 3
   template: 
     metadata:
       labels:
@@ -14,6 +14,12 @@ spec:
     spec:
       containers:
       - name: fraudrouter
-        image: fraudacr.azurecr.io/fraudrouter:5365
+        image: fraudacr.azurecr.io/fraudrouter:latest
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
         ports:
         - containerPort: 8080
+          name: fraudrouter-port        
+      

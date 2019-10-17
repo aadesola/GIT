@@ -1,26 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fraud
-  labels:
-    app: fraud-node
+  name: fraudrouter
 spec:
   selector:
     matchLabels:
-      app: fraud
-  replicas: 3
-  template:
+      app: fraudrouter
+  replicas: 1 
+  template: 
     metadata:
       labels:
-        app: fraud
+        app: fraudrouter
     spec:
       containers:
-      - name: hello
-        image: fraudacr.azurecr.io/fraudrouter
-        resources:
-          requests:
-            cpu: 100m
-            memory: 100Mi
+      - name: fraudrouter
+        image: fraudacr.azurecr.io/fraudrouter:5365
         ports:
         - containerPort: 8080
-          name: router

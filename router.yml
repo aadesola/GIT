@@ -23,5 +23,5 @@ spec:
             memory: 100Mi
         ports:
         - containerPort: 8080
-          name: fraudrouter-port        
+          name: router-port        
       

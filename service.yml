@@ -10,4 +10,4 @@ spec:
     targetPort: fraudrouter-port
   selector:
     app: fraudrouter
-  type: LoadBalancer  
+  type: LoadBalancer

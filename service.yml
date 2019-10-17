@@ -7,7 +7,7 @@ metadata:
 spec:
   ports:
   - port: 80
-    targetPort: fraudrouter-port
+    targetPort: router-port
   selector:
     app: fraudrouter
   type: LoadBalancer

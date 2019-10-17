@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: fraudrouter
+  labels:
+    app: fraudrouter
 spec:
   selector:
     matchLabels:
@@ -14,7 +16,7 @@ spec:
     spec:
       containers:
       - name: fraudrouter
-        image: fraudacr.azurecr.io/fraudrouter:latest
+        image: fraudacr.azurecr.io/fraudrouter
         resources:
           requests:
             cpu: 100m

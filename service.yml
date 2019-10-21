@@ -7,8 +7,7 @@ metadata:
 spec:
   ports:
   - port: 80
-    targetPort: router-port
-    externalTrafficPolicy: cluster
+    targetPort: router-port    
   selector:
     app: fraudrouter
   type: LoadBalancer

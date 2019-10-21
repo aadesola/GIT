@@ -8,6 +8,7 @@ spec:
   ports:
   - port: 80
     targetPort: router-port
+    externalTrafficPolicy: cluster
   selector:
     app: fraudrouter
   type: LoadBalancer

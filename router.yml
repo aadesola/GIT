@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: fraudrouter
-        image: fraudacr.azurecr.io/fraudrouter
+        image: fraudacr.azurecr.io/fraudrouter:latest
         resources:
           requests:
             cpu: 100m
